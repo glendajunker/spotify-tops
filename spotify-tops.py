@@ -87,14 +87,16 @@ def get_user_top_items(access_token, time_range):
     for index, artist in enumerate(top_artists):
         print(index + 1, artist["name"])
 
+
+    print(f"🎧 These are your top {len(top_tracks)} tracks of the last {range_str} on Spotify:")
+
     for index, track in enumerate(top_tracks):
         track_artists = []
 
         for artist in track['artists']:
             track_artists.append(artist["name"])
-
-    print(f"🎧 These are your top {len(top_tracks)} tracks of the last {range_str} on Spotify:")
-    print(f"{index + 1} {track['name']} by {', '.join(track_artists)}")
+            print(f"{index + 1} {track['name']} by {', '.join(track_artists)}")
+    
 
 
 def main():
