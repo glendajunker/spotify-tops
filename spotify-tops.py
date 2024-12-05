@@ -23,7 +23,7 @@ def get_authorisation_code():
         "response_type": "code",  # get authorisation code from Spotify
         "redirect_uri": redirect_url,
         "scope": "user-top-read"  # request to read the user's top artists and tracks
-    } 
+    }
 
     input("🔐 Press Enter to authenticate your Spotify account.\n💡 IMPORTANT: After authentication, copy the value of the 'code' parameter from the URL and paste it back into this terminal.")
 
@@ -68,45 +68,44 @@ def get_time_range():
             print("❌ Please provide a valid time frame!")
 
 
-def get_user_top_items(access_token, time_range):
-    range, range_str = time_range
-
+def get_top_item(item, access_token, time_range):
     request_headers = {
         "Authorization": f"Bearer {access_token}"
     }
 
-    top_artists_request = requests.get(f"{top_items_url}/artists?time_range={range}&limit=10", headers=request_headers)
-    top_artists = top_artists_request.json()["items"]
+    top_item_request = requests.get(f"{top_items_url}/{item}?time_range={time_range}&limit=10", headers=request_headers)
+    top_item = top_item_request.json()["items"]
 
-    top_tracks_request = requests.get(f"{top_items_url}/tracks?time_range={range}&limit=10", headers=request_headers)
-    top_tracks = top_tracks_request.json()["items"]
+    return top_item
 
 
-    print(f"🎧 These are your top {len(top_artists)} artists of the last {range_str} on Spotify:")
+def print_top_items(top_artists, top_tracks, time_range):
+    print(f"🎧 These are your top {len(top_artists)} artists of the last {time_range} on Spotify:")
 
     for index, artist in enumerate(top_artists):
         print(index + 1, artist["name"])
 
-
-    print(f"🎧 These are your top {len(top_tracks)} tracks of the last {range_str} on Spotify:")
+    print(f"🎧 These are your top {len(top_tracks)} tracks of the last {time_range} on Spotify:")
 
     for index, track in enumerate(top_tracks):
         track_artists = []
 
         for artist in track['artists']:
             track_artists.append(artist["name"])
-            print(f"{index + 1} {track['name']} by {', '.join(track_artists)}")
-    
+
+        print(f"{index + 1} {track['name']} by {', '.join(track_artists)}")
 
 
 def main():
     get_authorisation_code()
 
     access_token = get_access_token()
+    time_range, time_range_str = get_time_range()
 
-    time_range= get_time_range()
+    top_artists = get_top_item('artists', access_token, time_range)
+    top_tracks = get_top_item('tracks', access_token, time_range)
 
-    get_user_top_items(access_token, time_range)
+    print_top_items(top_artists, top_tracks, time_range_str)
 
 
 if __name__ == "__main__":
