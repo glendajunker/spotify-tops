@@ -31,7 +31,13 @@ def get_authorisation_code():
 
 
 def get_access_token():
-    auth_code = input("🔑 Paste the authentication code here: ")
+    while True:
+        auth_code = input("🔑 Paste the authentication code here: ")
+
+        if auth_code.strip():
+            break
+        else:
+            print("❌ Please enter a valid code!")
 
     encoded_credentials = base64.b64encode(
         client_id.encode() + b':' + client_secret.encode()).decode("utf-8")
@@ -47,9 +53,14 @@ def get_access_token():
         "redirect_uri": redirect_url
     }
 
-    token_request = requests.post(token_url, data=token_data, headers=token_headers)
+    try:
+        token_response = requests.post(token_url, data=token_data, headers=token_headers)
+        token_response.raise_for_status()
+        token_data = token_response.json()
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(f"❌ Unable to connect to Spotify: {e}")
 
-    return token_request.json()["access_token"]
+    return token_data["access_token"]
 
 
 def get_time_range():
