@@ -94,13 +94,15 @@ def get_top_item(item, access_token, time_range):
     return top_item_data
 
 
-def print_top_items(top_artists, top_tracks, time_range):
-    print(f"🎧 These are your top {len(top_artists)} artists of the last {time_range} on Spotify:")
+def get_top_items_str(top_artists, top_tracks, time_range):
+    str = []
+
+    str.append(f"🎧 These are your top {len(top_artists)} artists of the last {time_range} on Spotify:")
 
     for index, artist in enumerate(top_artists):
-        print(index + 1, artist["name"])
+        str.append(f"{index + 1} {artist["name"]}")
 
-    print(f"🎧 These are your top {len(top_tracks)} tracks of the last {time_range} on Spotify:")
+    str.append(f"🎧 These are your top {len(top_tracks)} tracks of the last {time_range} on Spotify:")
 
     for index, track in enumerate(top_tracks):
         track_artists = []
@@ -108,7 +110,9 @@ def print_top_items(top_artists, top_tracks, time_range):
         for artist in track['artists']:
             track_artists.append(artist["name"])
 
-        print(f"{index + 1} {track['name']} by {', '.join(track_artists)}")
+        str.append(f"{index + 1} {track['name']} by {', '.join(track_artists)}")
+
+    return "\n".join(str)
 
 
 def main():
@@ -120,7 +124,7 @@ def main():
     top_artists = get_top_item('artists', access_token, time_range)
     top_tracks = get_top_item('tracks', access_token, time_range)
 
-    print_top_items(top_artists, top_tracks, time_range_str)
+    print(get_top_items_str(top_artists, top_tracks, time_range_str))
 
 
 if __name__ == "__main__":
