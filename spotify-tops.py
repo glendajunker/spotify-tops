@@ -84,10 +84,14 @@ def get_top_item(item, access_token, time_range):
         "Authorization": f"Bearer {access_token}"
     }
 
-    top_item_request = requests.get(f"{top_items_url}/{item}?time_range={time_range}&limit=10", headers=request_headers)
-    top_item = top_item_request.json()["items"]
+    try:
+        top_item_response = requests.get(f"{top_items_url}/{item}?time_range={time_range}&limit=10", headers=request_headers)
+        top_item_response.raise_for_status()
+        top_item_data = top_item_response.json()["items"]
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(f"❌ Unable to get top {item}: {e}")
 
-    return top_item
+    return top_item_data
 
 
 def print_top_items(top_artists, top_tracks, time_range):
