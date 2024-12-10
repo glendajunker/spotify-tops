@@ -1,0 +1,333 @@
+{
+    "top_artists": [
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH"
+            },
+            "followers": {
+                "total": 27703514
+            },
+            "genres": ["garage rock", "modern rock", "permanent wave", "rock", "sheffield indie"],
+            "href": "https://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH",
+            "id": "7Ln80lUS6He07XvHI8qqHH",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb7da39dea0a72f581535fb11f",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab676161000051747da39dea0a72f581535fb11f",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f1787da39dea0a72f581535fb11f",
+                    "width": 160
+                }
+            ],
+            "name": "Arctic Monkeys",
+            "popularity": 88,
+            "type": "artist",
+            "uri": "spotify:artist:7Ln80lUS6He07XvHI8qqHH"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1KCSPY1glIKqW2TotWuXOR"
+            },
+            "followers": {
+                "total": 17377010
+            },
+            "genres": ["dance pop", "pop"],
+            "href": "https://api.spotify.com/v1/artists/1KCSPY1glIKqW2TotWuXOR",
+            "id": "1KCSPY1glIKqW2TotWuXOR",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb7bbad89a61061304ec842588",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab676161000051747bbad89a61061304ec842588",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f1787bbad89a61061304ec842588",
+                    "width": 160
+                }
+            ],
+            "name": "P!nk",
+            "popularity": 82,
+            "type": "artist",
+            "uri": "spotify:artist:1KCSPY1glIKqW2TotWuXOR"
+        },
+        {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4RddZ3iHvSpGV4dvATac9X"
+            },
+            "followers": {
+                "total": 5465174
+            },
+            "genres": ["alternative metal", "nu metal", "rap metal", "rap rock", "rock"],
+            "href": "https://api.spotify.com/v1/artists/4RddZ3iHvSpGV4dvATac9X",
+            "id": "4RddZ3iHvSpGV4dvATac9X",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb16d84e1083c232e86f299f01",
+                    "width": 640
+                },
+                {
+                    "height": 320,
+                    "url": "https://i.scdn.co/image/ab6761610000517416d84e1083c232e86f299f01",
+                    "width": 320
+                },
+                {
+                    "height": 160,
+                    "url": "https://i.scdn.co/image/ab6761610000f17816d84e1083c232e86f299f01",
+                    "width": 160
+                }
+            ],
+            "name": "Papa Roach",
+            "popularity": 74,
+            "type": "artist",
+            "uri": "spotify:artist:4RddZ3iHvSpGV4dvATac9X"
+        }
+    ],
+    "top_tracks": [
+        {
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/3YcBF2ttyueytpXtEzn1Za"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/3YcBF2ttyueytpXtEzn1Za",
+                        "id": "3YcBF2ttyueytpXtEzn1Za",
+                        "name": "Incubus",
+                        "type": "artist",
+                        "uri": "spotify:artist:3YcBF2ttyueytpXtEzn1Za"
+                    }
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/2i6nd4FV6y7K9fln6eelmR"
+                },
+                "href": "https://api.spotify.com/v1/albums/2i6nd4FV6y7K9fln6eelmR",
+                "id": "2i6nd4FV6y7K9fln6eelmR",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b27374fad40214d982351347e46e",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e0274fad40214d982351347e46e",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d0000485174fad40214d982351347e46e",
+                        "width": 64
+                    }
+                ],
+                "is_playable": true,
+                "name": "Make Yourself",
+                "release_date": "1999-10-26",
+                "release_date_precision": "day",
+                "total_tracks": 13,
+                "type": "album",
+                "uri": "spotify:album:2i6nd4FV6y7K9fln6eelmR"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/3YcBF2ttyueytpXtEzn1Za"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/3YcBF2ttyueytpXtEzn1Za",
+                    "id": "3YcBF2ttyueytpXtEzn1Za",
+                    "name": "Incubus",
+                    "type": "artist",
+                    "uri": "spotify:artist:3YcBF2ttyueytpXtEzn1Za"
+                }
+            ],
+            "disc_number": 1,
+            "duration_ms": 232453,
+            "explicit": false,
+            "external_ids": {
+                "isrc": "USSM19911007"
+            },
+            "external_urls": {
+                "spotify": "https://open.spotify.com/track/7nnWIPM5hwE3DaUBkvOIpy"
+            },
+            "href": "https://api.spotify.com/v1/tracks/7nnWIPM5hwE3DaUBkvOIpy",
+            "id": "7nnWIPM5hwE3DaUBkvOIpy",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Drive",
+            "popularity": 78,
+            "preview_url": null,
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:7nnWIPM5hwE3DaUBkvOIpy"
+        },
+        {
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2S5hlvw4CMtMGswFtfdK15"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2S5hlvw4CMtMGswFtfdK15",
+                        "id": "2S5hlvw4CMtMGswFtfdK15",
+                        "name": "Royal Blood",
+                        "type": "artist",
+                        "uri": "spotify:artist:2S5hlvw4CMtMGswFtfdK15"
+                    }
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/3Rz6kF8eGqrDOEteo5YsBj"
+                },
+                "href": "https://api.spotify.com/v1/albums/3Rz6kF8eGqrDOEteo5YsBj",
+                "id": "3Rz6kF8eGqrDOEteo5YsBj",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b27394b63000190c83e4dc4ea064",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e0294b63000190c83e4dc4ea064",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d0000485194b63000190c83e4dc4ea064",
+                        "width": 64
+                    }
+                ],
+                "is_playable": true,
+                "name": "How Did We Get So Dark?",
+                "release_date": "2017-06-16",
+                "release_date_precision": "day",
+                "total_tracks": 10,
+                "type": "album",
+                "uri": "spotify:album:3Rz6kF8eGqrDOEteo5YsBj"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/2S5hlvw4CMtMGswFtfdK15"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/2S5hlvw4CMtMGswFtfdK15",
+                    "id": "2S5hlvw4CMtMGswFtfdK15",
+                    "name": "Royal Blood",
+                    "type": "artist",
+                    "uri": "spotify:artist:2S5hlvw4CMtMGswFtfdK15"
+                }
+            ],
+            "disc_number": 1,
+            "duration_ms": 236426,
+            "explicit": false,
+            "external_ids": {
+                "isrc": "GBAHT1700098"
+            },
+            "external_urls": {
+                "spotify": "https://open.spotify.com/track/1060gzllf4b0UETAXisR5l"
+            },
+            "href": "https://api.spotify.com/v1/tracks/1060gzllf4b0UETAXisR5l",
+            "id": "1060gzllf4b0UETAXisR5l",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Lights Out",
+            "popularity": 55,
+            "preview_url": null,
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:1060gzllf4b0UETAXisR5l"
+        },
+        {
+            "album": {
+                "album_type": "album",
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/4RddZ3iHvSpGV4dvATac9X"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/4RddZ3iHvSpGV4dvATac9X",
+                        "id": "4RddZ3iHvSpGV4dvATac9X",
+                        "name": "Papa Roach",
+                        "type": "artist",
+                        "uri": "spotify:artist:4RddZ3iHvSpGV4dvATac9X"
+                    }
+                ],
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/album/1OO7kdJ4OzWbjcroJEpfTH"
+                },
+                "href": "https://api.spotify.com/v1/albums/1OO7kdJ4OzWbjcroJEpfTH",
+                "id": "1OO7kdJ4OzWbjcroJEpfTH",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732d5551c32546cafe3aafd939",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e022d5551c32546cafe3aafd939",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048512d5551c32546cafe3aafd939",
+                        "width": 64
+                    }
+                ],
+                "is_playable": true,
+                "name": "Getting Away With Murder",
+                "release_date": "2004-01-01",
+                "release_date_precision": "day",
+                "total_tracks": 12,
+                "type": "album",
+                "uri": "spotify:album:1OO7kdJ4OzWbjcroJEpfTH"
+            },
+            "artists": [
+                {
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/artist/4RddZ3iHvSpGV4dvATac9X"
+                    },
+                    "href": "https://api.spotify.com/v1/artists/4RddZ3iHvSpGV4dvATac9X",
+                    "id": "4RddZ3iHvSpGV4dvATac9X",
+                    "name": "Papa Roach",
+                    "type": "artist",
+                    "uri": "spotify:artist:4RddZ3iHvSpGV4dvATac9X"
+                }
+            ],
+            "disc_number": 1,
+            "duration_ms": 208199,
+            "explicit": false,
+            "external_ids": {
+                "isrc": "USDW10400812"
+            },
+            "external_urls": {
+                "spotify": "https://open.spotify.com/track/3TAtUJc4Sj913Cs5gBUeu0"
+            },
+            "href": "https://api.spotify.com/v1/tracks/3TAtUJc4Sj913Cs5gBUeu0",
+            "id": "3TAtUJc4Sj913Cs5gBUeu0",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Scars",
+            "popularity": 62,
+            "preview_url": null,
+            "track_number": 8,
+            "type": "track",
+            "uri": "spotify:track:3TAtUJc4Sj913Cs5gBUeu0"
+        }
+    ]
+}
